@@ -1,0 +1,222 @@
+@font-face {
+    font-family: 'MyWebFont';
+    src: url('ONEDAY.ttf') format('truetype')
+}
+
+*{
+    font-family: 'MyWebFont'
+}
+body{
+    display: grid;
+}
+.container{
+    display: grid;
+    grid-template-rows: repeat(4, minmax(97.4vh, auto));
+    grid-template-columns: 1fr;
+    grid-row-gap: 10px
+}
+.container:first-child{
+    margin-bottom: 2px
+}
+.body{
+    background-image: linear-gradient(to right, #d45bf6, #9d59fe);
+    display: grid;
+    justify-content: center;
+    align-items: center
+}
+.nama{
+    font-size: 6.833rem;
+    grid-template-columns: 1fr;
+}
+#nama1{
+    text-align: center;
+    color: #540477
+}
+#nama2{
+    font-size: 30pt;
+    text-align: center;
+    color: white;
+}
+.navigation{
+    justify-self: center;
+    align-self: flex-end;
+    width: 50%;
+    justify-content: space-between;
+    display: flex;
+    color: white;
+}
+.navigation div{
+    cursor: pointer;
+}
+.portofolio{
+    display: grid;
+    /* grid-row: 2 /span 3; */
+    grid-row-gap: 5px;
+    grid-template-rows: 1fr 1fr;
+}
+.portofolio-header{
+    background-image: linear-gradient(to right, #d45bf6, #9d59fe);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.portofolio-header-title{
+    grid-column: 1;
+    align-items: center;
+    display: grid;
+    justify-items: center;
+}
+.portofolio-header-title div{
+    width: 50%;
+}
+.portofolio-header-body{
+    grid-row: 2;
+    grid-column: 1;
+    display: grid;
+    justify-items: center;
+}
+.portofolio-header-body img{
+    max-width: 50%;
+}
+.menubot{
+    grid-column: 1;
+    grid-row: 3;
+    align-self: flex-end
+}
+.menubot img{
+    max-width: 80%;
+}
+.portofolio-footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(9, minmax(75px, auto));
+    grid-gap: 20px;
+    text-align: center;
+}
+.portofolio-footer > div > img{
+    max-width: 100%;
+}
+.box1{
+    grid-column: 1;
+    grid-row: 1 /span 3
+}
+.box2{
+    grid-row: 4 /span 3;
+    grid-column: 4
+}
+.box3{
+    grid-column: 1;
+    grid-row: 7 /span 3
+}
+.text1{
+    grid-column: 2;
+    grid-row: 2
+}
+.text2{
+    grid-column: 3;
+    grid-row: 5
+}
+.text3{
+    grid-column: 2;
+    grid-row: 8
+}
+.about{
+    display: grid;
+    grid-template-rows: 7% 1fr 7%;
+}
+.head-about, .footer-about{
+    background-image: linear-gradient(to right, #d45bf6, #9d59fe);
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+.other{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 7% 1fr 7%;
+}
+.body-other{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.body-other div{
+    font-size: 6vh
+}
+.eduation li{
+    border-left: solid 1px
+}
+@media only screen and (max-width: 600px) {
+    .body-other div{
+        font-size: 3vh
+    }
+    .container{ 
+        grid-template-rows: repeat(4, minmax(90.4vh, auto));
+    }
+    .nama{
+        font-size: 2.833rem;
+        color: white;
+    }
+    #nama1{
+        color: white
+    }
+    #nama2{
+        font-size: 1rem;
+    }
+    .navigation{
+        justify-self: center;
+        bottom: 0;
+        align-self: flex-end;
+        width: 100%;
+        justify-content: space-around;
+        display: flex;
+        color: white;
+        margin-right: 0px;
+    }
+    .portofolio{
+        display: grid;
+        grid-row: 2;
+        grid-template-rows: 30% 1fr;
+        grid-row-gap: 5px;
+    }
+    .portofolio-header{
+        background-image: linear-gradient(to right, #d45bf6, #9d59fe);
+        display: grid;
+        grid-template-rows: 25% 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+    .menubot{
+        display: grid;
+    }
+    .menubot img{
+        align-self: flex-end
+    }
+    .portofolio-footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, minmax(75px, 142px));
+        grid-gap: 0px;
+    }
+    .box2{
+        grid-row: 2;
+        grid-column: 2
+    }
+    .box1{
+        grid-row: 1;
+        grid-column: 1
+    }
+    .box3{
+        grid-column: 1;
+        grid-row: 3
+    }
+    .text1{
+        grid-column: 2;
+        grid-row: 1
+    }
+    .text2{
+        grid-column: 1;
+        grid-row: 2
+    }
+    .text3{
+        grid-column: 2;
+        grid-row: 3 
+    }
+}
