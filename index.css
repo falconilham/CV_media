@@ -64,6 +64,7 @@ body{
     align-items: center;
     display: grid;
     justify-items: center;
+    font-size: 6vh;
 }
 .portofolio-header-title div{
     width: 50%;
@@ -109,15 +110,18 @@ body{
 }
 .text1{
     grid-column: 2;
-    grid-row: 2
+    grid-row: 2;
+    font-weight: bolder
 }
 .text2{
     grid-column: 3;
-    grid-row: 5
+    grid-row: 5;
+    font-weight: bolder
 }
 .text3{
     grid-column: 2;
-    grid-row: 8
+    grid-row: 8;
+    font-weight: bolder
 }
 .about{
     display: grid;
@@ -141,10 +145,30 @@ body{
 .body-other div{
     font-size: 6vh
 }
-.eduation li{
-    border-left: solid 1px
+.education ul, .skills ul, .interest ul, .employment ul{
+    font-size: 6vh;
+    
+}
+.education li, .skills li, .interest li, .employment li{
+    font-size: 17px;
+    margin: 20px 0px
+}
+.ganteng{
+    width: 50%;
+    font-size: 20px;
+    font-family: cursive;
+}
+.body-about{
+    display: grid;
+    justify-items: center;
+    align-items: center;
 }
 @media only screen and (max-width: 600px) {
+    .ganteng{
+        font-size: 15px;
+        font-family: cursive;
+        width: 100%
+    }
     .body-other div{
         font-size: 3vh
     }
@@ -183,6 +207,9 @@ body{
         grid-template-rows: 25% 1fr;
         grid-template-columns: 1fr 1fr;
     }
+    .portofolio-header-title{
+        font-size: 3vh;
+    }
     .menubot{
         display: grid;
     }
@@ -218,5 +245,8 @@ body{
     .text3{
         grid-column: 2;
         grid-row: 3 
+    }
+    .education ul{
+        font-size: 3vh
     }
 }
